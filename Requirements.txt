@@ -1,0 +1,6 @@
+Hadoop==2.7.1
+Sqoop==1.4.6
+Hive==1.2.2
+Hbase==0.98.4
+Zookeeper==3.4.6
+Phoenix==4.6.0
