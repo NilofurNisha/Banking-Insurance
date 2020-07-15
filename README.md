@@ -10,7 +10,7 @@ code fixed width data and the customer master datasets.
  - Run the scripts
 ## Local Installation
 **Install the requirements:**
-$ pip install -r Requirements.txt
+$ pip install -r requirements.txt
 
 **Make sure you have the following installed:**
 - Hadoop
