@@ -24,18 +24,18 @@ $ pip install -r Requirements.txt
 - [Install mysql](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7).
 - [Install postgresql](https://linuxize.com/post/how-to-install-postgresql-on-centos-7/).
 ## Starting services 
-- Start Hadoop
+- Hadoop
   - start-all.sh 
   - mr-jobhistory-daemon.sh start historyserver (job history server)
-- Start mysql service
+- Mysql service
   - service mysqld start
-- Start Hive metastore in a terminal
+- Hive metastore in a terminal
   - hive --service metastore & (as background service)
-- Start Hbase
+- Hbase
   - start-hbase.sh 
-- Start Zookeeper
+- Zookeeper
   - zkServer.sh start
-- Start Phoenix
+- Phoenix
   - sqlline.py localhost
 ## Run the scripts
    Generate reports from the final table
