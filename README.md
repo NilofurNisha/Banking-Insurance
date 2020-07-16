@@ -9,7 +9,7 @@ code fixed width data and the customer master datasets.
  - Start Services
  - Run the scripts
 ## Local Installation
-Install tools given in requirements.txt
+Install tools given in `requirements.txt` and also refer to `conf` above for configuration.
 
 **Make sure you have the following installed:**
 - Hadoop
