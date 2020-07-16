@@ -1,0 +1,21 @@
+Project Flow:
+=============
+1. Data ingestion and acquisition is done through Sqoop and Linux file system.
+2. Merge the 2 dataset using hive and split the defaulters and non-defaulters into 2 data sets and
+load into hdfs.
+3. Create a hive table with header line count as 1
+4. Create one more fixed width hive table to load the fixed width states_fixedwidth data.
+5. Create a managed table on top of the hive output defaulters dataset
+6. Convert the above managed table from managed to external.
+7. Export the view data into hdfs with comma delimiter, as row format delimited fields terminated
+by ',' will not work for hdfs export.
+8. Export the above masked data into mysql using sqoop Export the above data into mysql using
+sqoop
+9. Join insurance and credit card data and load into hbase table created with 2 column families
+credit and insurance.
+10. Import using sqoop from db into hbase custmaster data.
+11. Create a hbase handler table in hive using hbase storage handler referring to insurancehive
+table that will be automatically created in hbase with insurance and credit card column families
+when we create the below hive table.
+12. create a phoenix table view on the above hbase table and analyze profession based total
+payment and average payment.
